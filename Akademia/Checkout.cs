@@ -2,7 +2,7 @@
 
 namespace Akademia {
 
-    abstract class Checkout {
+    public abstract class Checkout {
 
         public decimal Total { get; private set; }
 

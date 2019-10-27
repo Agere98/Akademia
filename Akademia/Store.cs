@@ -2,26 +2,12 @@
 
 namespace Akademia {
 
-    class Store {
+    public class Store {
 
         private Checkout[] checkouts;
 
         public Store(Checkout[] checkouts) {
             this.checkouts = checkouts;
-        }
-
-        static void Main(string[] args) {
-
-            Store store = new Store(new Checkout[6] {
-                new StaffedCheckout(),
-                new StaffedCheckout(),
-                new StaffedCheckout(),
-                new StaffedCheckout(),
-                new SelfCheckout(),
-                new SelfCheckout()
-            });
-
-            store.Shop();
         }
 
         public void Shop() {

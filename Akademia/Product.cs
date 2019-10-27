@@ -1,6 +1,6 @@
 ﻿namespace Akademia {
 
-    class Product {
+    public class Product {
 
         public string Name { get; set; }
         public virtual decimal Price { get; set; }

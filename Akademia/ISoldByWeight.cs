@@ -1,6 +1,6 @@
 ﻿namespace Akademia {
 
-    interface ISoldByWeight {
+    public interface ISoldByWeight {
 
         float Weight { get; set; }
 

@@ -1,6 +1,6 @@
 ﻿namespace Akademia {
 
-    class Vegetable : Product, ISoldByWeight {
+    public class Vegetable : Product, ISoldByWeight {
 
         public float Weight { get; set; }
         public override decimal Price {

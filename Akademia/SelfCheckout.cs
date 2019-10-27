@@ -2,7 +2,7 @@
 
 namespace Akademia {
 
-    class SelfCheckout : Checkout {
+    public class SelfCheckout : Checkout {
 
         public override bool MakePayment() {
 
