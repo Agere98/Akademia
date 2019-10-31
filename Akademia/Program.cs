@@ -4,7 +4,7 @@
 
         static void Main(string[] args) {
 
-            Store store = new Store(new Checkout[6] {
+            var store = new Store(new Checkout[] {
                 new StaffedCheckout(),
                 new StaffedCheckout(),
                 new StaffedCheckout(),
