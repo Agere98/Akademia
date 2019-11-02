@@ -12,14 +12,14 @@ namespace Akademia {
         }
 
         public virtual void Scan(Product product) {
-            Console.WriteLine($"\t{product.Name, -32}  {product.GetHashCode(), 8}  {product.Price, 6}");
+            Console.WriteLine($"\t{product.name, -32}  {product.GetHashCode(), 8}  {product.price, 6}");
 
             // W przypadku produktów sprzedawanych na wagę wyświetl szczegółowe informacje
             if (product is ISoldByWeight soldByWeight) {
                 Console.WriteLine($"\t{$"{soldByWeight.Weight, 5}kg * {soldByWeight.GetPricePerKilogram()}zł/kg", 50}");
             }
 
-            Total += product.Price;
+            Total += product.price;
         }
 
         protected void PrintTotal() {
